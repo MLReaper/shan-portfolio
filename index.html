@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Shan Lin Portfolio</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            #header {
+                background-color: #5b21b6;
+                color: white;
+                padding: 20px 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  
+            }
+            #header-left {
+                float: left;
+            }
+            #header-left h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+            #header-left p {
+                margin: 5px 0 0 0;
+                font-size: 12px;
+            }
+            #header-right {
+                float: right;
+                margin-top: 5px;
+            }
+            #header-right a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+                font-size: 15px;
+            }
+            #header-right a:hover {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            #about {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 60px 40px;
+            }
+            #about-img {
+                float: left;
+                width: 250px;
+                margin-right: 50px;
+            }
+            #about-text {
+                float: left;
+                width: 600px;
+                margin-top: 20px;
+            }
+            #about-text h2 {
+                color: #5b21b6;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            #about-text p {
+                color: gray;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            .section-title {
+                color: #5b21b6;
+                font-size: 28px;
+                margin-left: 50px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+            #skills-container {
+                padding: 0 50px;
+                overflow: hidden;
+            }
+            .skill-box {
+                float: left;
+                width: 200px;
+                height: 120px;
+                border: 1px solid #ccc;
+                margin: 15px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+                border-radius: 5px;
+            }
+            .skill-box img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+            .skill-box h4 {
+                margin: 10px 0;
+            }
+            .skill-box p {
+                font-size: 14px;
+                color: #333;
+            }
+            #projects {
+                padding: 0 50px;
+            }
+            .project {
+                margin-bottom: 30px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 30px;
+            }
+            .project h3 {
+                margin-bottom: 10px;
+            }
+            .project ul {
+                margin-left: 20px;
+            }
+            .project li {
+                margin-bottom: 5px;
+                color: #444;
+            }
+            #rec-container {
+                padding: 0 50px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .rec-card {
+                float: center;
+                width: 280px;
+                border: 1px solid #ccc;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 5px;
+                font-style: italic;
+                color: #555;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            #form-section {
+                max-width: 600px;
+                margin: 50px auto;
+            }
+            #form-section h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            #form-section input, #form-section textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                font-family: Arial;
+            }
+            #form-section textarea {
+                height: 100px;
+            }
+            #submit-btn {
+                background-color: white;
+                color: #5b21b6;
+                border: 2px solid #5b21b6;
+                padding: 10px 30px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+                display: block;
+                margin: 0 auto;
+            }
+            #submit-btn:hover {
+                background-color: #5b21b6;
+                color: white;
+            }
+            #top-btn {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background-color: #5b21b6;
+                color: white;
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                font-size: 20px;
+                cursor: pointer;
+                display: none; /* hidden by default */
+            }
+        </style>
+</head>
+    <body>
+        <div id="header">
+            <div id="header-left">
+                <h1>Shan Lin</h1>
+                <p><span>📧</span> MLReaperLabs@gmail.com</p>
+                <p><span>📞</span> +123456789</p>
+            </div>
+            <div id="header-right">
+                <a href="#about">About Me</a>
+                <a href="#skills-title">Skills</a>
+                <a href="#project-title">Projects</a>
+                <a href="#rec-title">Recommendations</a>
+            </div>
+        </div>
+        <div id="about">
+            <img id="about-img" src="https://i.postimg.cc/G2VJdC2g/me.png" alt="me">
+            <div id="about-text">
+                <h2>Hi, I'm Shan Lin!<span>👋</span></h2>
+                <p>I am a Full Stack Developer with experience in developing responsive web applications using both front-end and back-end technologies. I have worked on projects involving Java, JavaScript, React, Node.js, HTML, and CSS, focusing on creating user-friendly and efficient solutions. I am passionate about learning new technologies, improving my development skills, and applying best practices to build modern web applications.</p>
+            </div>
+        </div>
+            <h2 class="section-title" id="skills-title">Skills</h2>
+            <div id="skills-container">
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+                    <h4>HTML</h4>
+                    <p>2 years experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JS">
+                    <h4>JavaScript</h4>
+                    <p>1.5 years experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                    <h4>Java</h4>
+                    <p>1.5 years experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                    <h4>React</h4>
+                    <p>1 year experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node">
+                    <h4>Node.js</h4>
+                    <p>1 year experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS">
+                    <h4>CSS</h4>
+                    <p>2 years experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" alt="SQL">
+                    <h4>SQL</h4>
+                    <p>2 years experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git">
+                    <h4>Git</h4>
+                    <p>1.5 years experience</p>
+                </div>
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                    <h4>Python</h4>
+                    <p>2 years experience</p>
+                </div>
+            </div>
+                <h2 class="section-title" id="project-title">Projects</h2>
+                <div id="projects">
+                    <div class="project">
+                    <h3>Student Grade Calculator</h3>
+                    <ul>
+                        <li>Built a JavaScript application that calculates student grades and averages.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Personal Portfolio Website</h3>
+                    <ul>
+                        <li>Created a responsive portfolio website using HTML, CSS and JavaScript.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Employee Management System</h3>
+                    <ul>
+                        <li>Developed a system to search and manage employee records using JavaScript objects.</li>
+                    </ul>
+                </div>
+        </div>
+            <h2 class="section-title" id="rec-title">Recommendations</h2>
+            <div id="rec-container">
+                <div class="rec-card">
+                    <p>"Shan Lin is a dedicated developer who consistently delivers quality work and is always willing to learn new technologies."</p>
+                </div>
+                <div class="rec-card">
+                    <p>"Working with Shan Lin was a great experience. She communicates well and completes tasks efficiently."</p>
+                </div>
+                <div class="rec-card">
+                    <p>"Shan Lin demonstrates strong problem-solving skills and contributes positively to every project."</p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+                <div id="form-section">
+                    <h3>Leave a Recommendation</h3>
+                    <input type="text" id="rec-name" placeholder="Name (Optional)">
+                    <textarea id="rec-message" placeholder="Message"></textarea>
+                    <button id="submit-btn" onclick="addRecommendation()">Submit</button>
+                </div>
+
+                <br><br><br><br>
+
+            <button id="top-btn" onclick="scrollToTop()">🏠</button>
+
+<script>
+function addRecommendation() {
+
+var name = document.getElementById("rec-name").value;
+var message = document.getElementById("rec-message").value;
+
+if (message == "") {
+    alert("Please enter a recommendation!");
+    return;
+}
+
+var recommendationText;
+
+if (name == "") {
+    recommendationText = '"' + message + '"';
+} else {
+    recommendationText = '"' + message + '" - ' + name;
+}
+
+var newRecommendation = document.createElement("div");
+newRecommendation.className = "rec-card";
+
+newRecommendation.innerHTML =
+    "<p>" + recommendationText + "</p>";
+
+document.getElementById("rec-container")
+        .appendChild(newRecommendation);
+
+alert("Thank you for your recommendation!");
+
+document.getElementById("rec-name").value = "";
+document.getElementById("rec-message").value = "";
+}
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+window.onscroll = function () {
+
+if (document.documentElement.scrollTop > 100) {
+    document.getElementById("top-btn").style.display = "block";
+}
+else {
+    document.getElementById("top-btn").style.display = "none";
+}
+};
+</script>
+    </body>
+</html>
